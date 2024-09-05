@@ -1,0 +1,137 @@
+/* Reseta margens e preenchimentos, e define box-sizing para border-box em todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background: #000; /* Fundo preto para toda a página */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background: #1e1e1e;
+    color: #fff;
+    padding: 1rem 0;
+    border-bottom: 4px solid #ff6600; /* Borda laranja inferior no cabeçalho */
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    border: 2px solid #1e1e1e; /* Borda laranja ao redor do título */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+/* Estilos para o menu de navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilos para a seção hero */
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 0;
+    border: 4px solid #ff6600; /* Borda laranja ao redor da seção hero */
+}
+
+.hero .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.video-container {
+    margin-top: 2rem;
+}
+
+/* Estilos para a seção de recursos */
+#features {
+    padding: 2rem 0;
+    border: 4px solid #ff6600; /* Borda laranja ao redor da seção de recursos */
+    text-align: center; /* Centraliza o texto dentro da seção de recursos */
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: center; /* Centraliza a grid dentro da seção */
+    flex-wrap: wrap;
+    max-width: 80%; /* Limita a largura máxima da grid */
+    margin: 0 auto; /* Centraliza a grid no container */
+}
+
+.feature {
+    background: #333;
+    padding: 1rem;
+    border: 1px solid #444;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center; /* Centraliza o texto dentro de cada feature */
+    margin: 1rem;
+}
+
+.feature h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background: #1e1e1e;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    border-top: 4px solid #ff6600; /* Borda laranja superior no rodapé */
+}
+
+footer .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+img {
+    height: 150px;
+  }
+  .video-container {
+    margin-bottom: 0; /* Remove qualquer margem abaixo do vídeo */
+}
+
+.categoria-videos {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    margin-top: 0; /* Remove qualquer margem superior para encostar no conteúdo acima */
+    padding: 0; /* Remove padding se necessário */
+}
+
+.categoria-videos img {
+    height: 150px; /* Ajuste o tamanho das imagens conforme necessário */
+    border-radius: 5px; /* Adiciona bordas arredondadas se desejado */
+}
